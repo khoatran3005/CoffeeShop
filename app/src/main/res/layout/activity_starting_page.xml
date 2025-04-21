@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightCream"
+    tools:context=".Activity.StartingPageActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_pic" />
+
+    <TextView
+        android:id="@+id/welcomeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to CoffeeShop"
+        android:textColor="@color/white"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Best Grain, The Finest Roast, The Powerful Flavor"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTxt" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/orange_bg"
+            android:text="Login"
+            android:textColor="@color/darkBrown"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpBtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/orange_bg"
+            android:text="Sign Up"
+            android:textColor="@color/darkBrown"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/guestBtn"
+            style="@android:style/Widget.Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/orange_bg"
+            android:text="Continue as a Guest"
+            android:textColor="@color/darkBrown"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
